@@ -1,0 +1,210 @@
+:root {
+  /* Light Theme Colors */
+  --hr-color: #c8c8c8;
+  --text-light: #000000;
+  --title-light: #1e3a8a;
+  --subtitle-light: #1f2937;
+  --desc-light: #4b5563;
+  --background-light: #f8f8f8;
+  --menu-light: #7c3aed;
+  --step-light: #ffffff;
+  --table-light: #ffffff;
+  --tableA-light: #000000;
+}
+
+:root {
+  /* Dark Theme Colors */
+  --text-dark: #ececec;
+  --title-dark: #3b82f6;
+  --subtitle-dark: #f9fafb;
+  --desc-dark: #e5e7eb;
+  --background-dark: #303030;
+  --menu-dark: #9b4ef9;
+  --step-dark: #92979e;
+  --table-dark: #2d2d2d;
+  --tableA-dark: #ffffff;
+}
+
+.app {
+  display: flex;
+  min-height: 100vh;
+}
+
+.app.light {
+  background-color: var(--background-light);
+}
+
+.app.dark {
+  background-color: var(--background-dark);
+}
+
+.app.light h5 {
+  color: var(--subtitle-light);
+}
+
+.app.dark h5 {
+  color: var(--subtitle-dark);
+}
+
+.app.light h4 {
+  color: var(--title-light);
+}
+
+.app.dark h4 {
+  color: var(--title-dark);
+}
+
+.app.light h3 {
+  color: var(--subtitle-light);
+}
+
+.app.dark h3 {
+  color: var(--subtitle-dark);
+}
+
+.app.light .homePageText {
+  color: var(--subtitle-light);
+}
+
+.app.dark .homePageText {
+  color: var(--subtitle-dark);
+}
+
+.app.light .my-motto {
+  color: var(--desc-light);
+}
+
+.app.dark .my-motto {
+  color: var(--desc-dark);
+}
+
+.appbar a {
+  color: var(--text-light);
+}
+
+.app.light .menuitems {
+  color: var(--menu-light);
+}
+
+.app.dark .menuitems {
+  color: var(--menu-dark);
+}
+
+.app.light .stepContent {
+  background-color: var(--step-light);
+}
+
+.app.dark .stepContent {
+  background-color: var(--step-dark);
+}
+
+.app.light .tableOfContent {
+  background-color: var(--table-light);
+}
+
+.app.dark .tableOfContent {
+  background-color: var(--table-dark);
+}
+
+.app.light .tableOfContent a {
+  color: var(--tableA-light);
+}
+
+.app.light .tableOfContent h2 {
+  color: var(--tableA-light);
+}
+
+.app.dark .tableOfContent a {
+  color: var(--tableA-dark);
+}
+
+.app.dark .tableOfContent h2 {
+  color: var(--tableA-dark);
+}
+
+.app.light .projectDesc {
+  color: var(--desc-light);
+}
+
+.app.dark .projectDesc {
+  color: var(--desc-dark);
+}
+
+.app.light table {
+  background-color: var(--step-light);
+}
+
+.app.dark table {
+  background-color: var(--step-dark);
+}
+
+.app.light .tableTitle {
+  color: black;
+}
+
+.app.dark .tableTitle {
+  color: var(--step-light);
+}
+
+.app.light .tableRow {
+  color: black;
+}
+
+.app.dark .tableRow {
+  color: var(--step-light);
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  opacity: 0.6;
+}
+
+@keyframes fadeInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-from-bottom {
+  animation: fadeInFromBottom 0.5s ease-out;
+}
+
+@keyframes fade-in-from-right {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in-from-right {
+  animation: fade-in-from-right 0.5s ease-out;
+}
