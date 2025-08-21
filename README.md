@@ -25,13 +25,15 @@ Employee
 - View daily attendance status
 - View company events
 - Access personal attendance history
-- Manage personal profile  
+- Manage personal profile
   
 Employer
 - All employee privileges
 - Create and manage events
 - Add attendance records for employees
 - Access comprehensive attendance reporting
+- Add/Remove an user permission
+- Update user's department or profile
 
 ## 💳 Card Reader Integration
 
