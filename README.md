@@ -40,14 +40,6 @@ Employer
 The system includes a dedicated card reader module located at backend/app/reader/cardreader.py. This module interfaces with physical card readers to automatically record employee check-ins by storing the scanned card numbers directly in the database. It allowed to input a user id manualy.  
 There is a video provided, that demonstration how this work.  
 
-### 🎴 Two Demo Card
-
-Employee
-- 7404696
-  
-Employer  
-- 7595700
-
 ## 🧪 Testing
 - Comprehensive API test suite in `/backend/app/tests/`
 
